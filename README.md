@@ -23,13 +23,20 @@ $BRICKS $WALL  - include custom brick definition file $BRICKS(filename) $WALL(pa
 $BRICK - define custom brick $BRICK(SOME=sometext)
 
 Source flow control command its like C prerocessor
+
 $INCLUDE  - include source file $INCLUDE(path\to\file)
+
 // like C prerocessor #ifdef #elif #else #endif 
 $IFDEF  - if brick is defined   $IFDEF(_DEBUG_)
+
 $IFNDEF - if brick is not defined $IFNDEF(_USE_CUSTOM_TAG_)
+
 $ELIF	- else if brick is defined $ELIF(USE_IE_9)
+
 $ELIFN	- else if brick is defined $elseifn(_DEBUG_)
+
 $ELSE	- else ie $ifDEF (_DEBUF_) this is debug version $elseif current verions is $VERSION $elsif
+
 $ENDIF  - end of if
 
-
+.
